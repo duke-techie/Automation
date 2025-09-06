@@ -1,0 +1,7 @@
+---
+- name: package_install
+  hosts: web_server
+  become: yes
+  tasks:
+    - name:
+      ansible.builtin.script: /etc/ansible/Ansible/automation.sh
